@@ -9,29 +9,41 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="templates\admin\identitydata.template" />
-    <None Remove="templates\admin\identityserverdata.template" />
+    <None Remove="templates\Admin\identitydata.template" />
+    <None Remove="templates\Admin\identityserverdata.template" />
+    <None Remove="templates\Admin\serilog.json" />
     <None Remove="templates\appsettings.production.json" />
-    <None Remove="templates\sts\appsettings.production.template" />
+    <None Remove="templates\STS\appsettings.template" />
+    <None Remove="templates\STS\serilog.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="templates\admin\appsettings.production.template">
+    <Content Include="templates\Admin\appsettings.template">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="templates\admin\identitydata.template">
+    <Content Include="templates\Admin\identitydata.template">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="templates\admin\identityserverdata.template">
+    <Content Include="templates\Admin\identityserverdata.template">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="templates\sts\appsettings.production.template">
+    <Content Include="templates\Admin\serilog.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="templates\STS\appsettings.template">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="templates\STS\serilog.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>

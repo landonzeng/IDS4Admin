@@ -1,12 +1,12 @@
 {
-  "urls": "http://*:4001",
+  [GETADMINURLS],
   "ConnectionStrings": {
-    "ConfigurationDbConnection": "Data Source=127.0.0.1;port=3306;Database=IdentityServer4Admin;User ID=root;Password=abc@123;pooling=true;min pool size=5;max pool size=512;sslmode=none;CharSet=utf8mb4;Convert Zero Datetime=True;Allow Zero Datetime=True;AllowLoadLocalInfile=true;",
-    "PersistedGrantDbConnection": "Data Source=127.0.0.1;port=3306;Database=IdentityServer4Admin;User ID=root;Password=abc@123;pooling=true;min pool size=5;max pool size=512;sslmode=none;CharSet=utf8mb4;Convert Zero Datetime=True;Allow Zero Datetime=True;AllowLoadLocalInfile=true;",
-    "IdentityDbConnection": "Data Source=127.0.0.1;port=3306;Database=IdentityServer4Admin;User ID=root;Password=abc@123;pooling=true;min pool size=5;max pool size=512;sslmode=none;CharSet=utf8mb4;Convert Zero Datetime=True;Allow Zero Datetime=True;AllowLoadLocalInfile=true;",
-    "AdminLogDbConnection": "Data Source=127.0.0.1;port=3306;Database=IdentityServer4Admin;User ID=root;Password=abc@123;pooling=true;min pool size=5;max pool size=512;sslmode=none;CharSet=utf8mb4;Convert Zero Datetime=True;Allow Zero Datetime=True;AllowLoadLocalInfile=true;",
-    "AdminAuditLogDbConnection": "Data Source=127.0.0.1;port=3306;Database=IdentityServer4Admin;User ID=root;Password=abc@123;pooling=true;min pool size=5;max pool size=512;sslmode=none;CharSet=utf8mb4;Convert Zero Datetime=True;Allow Zero Datetime=True;AllowLoadLocalInfile=true;",
-    "DataProtectionDbConnection": "Data Source=127.0.0.1;port=3306;Database=IdentityServer4Admin;User ID=root;Password=abc@123;pooling=true;min pool size=5;max pool size=512;sslmode=none;CharSet=utf8mb4;Convert Zero Datetime=True;Allow Zero Datetime=True;AllowLoadLocalInfile=true;"
+    "ConfigurationDbConnection": "[CONNECTIONSTRING]",
+    "PersistedGrantDbConnection": "[CONNECTIONSTRING]",
+    "IdentityDbConnection": "[CONNECTIONSTRING]",
+    "AdminLogDbConnection": "[CONNECTIONSTRING]",
+    "AdminAuditLogDbConnection": "[CONNECTIONSTRING]",
+    "DataProtectionDbConnection": "[CONNECTIONSTRING]"
   },
   "SeedConfiguration": {
     "ApplySeed": true
@@ -15,13 +15,13 @@
     "ApplyDatabaseMigrations": true
   },
   "DatabaseProviderConfiguration": {
-    "ProviderType": "MySql"
+    "ProviderType": "[DBTYPE]"
   },
   "AdminConfiguration": {
     "PageTitle": "Identity Server",
     "FaviconUri": "~/favicon.ico",
-    "IdentityAdminRedirectUri": "https://localhost:44303/signin-oidc",
-    "IdentityServerBaseUrl": "https://localhost:44310",
+    "IdentityAdminRedirectUri": "[ADMINURI]/signin-oidc",
+    "IdentityServerBaseUrl": "[STSURI]",
     "IdentityAdminCookieName": "IdentityServerAdmin",
     "IdentityAdminCookieExpiresUtcHours": 12,
     "RequireHttpsMetadata": false,
@@ -67,7 +67,7 @@
     "DefaultCulture": null
   },
   "HttpConfiguration": {
-    "BasePath": ""
+    "BasePath": "[ADMINBASEPATH]"
   },
   "IdentityOptions": {
     "Password": {

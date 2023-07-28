@@ -18,9 +18,9 @@
         }
       },
       {
-        "Name": "MySQL",
+        "Name": "[DBTYPE]",//如果是mysql的话字符串必须是MySQL
         "Args": {
-          "connectionString": "Data Source=127.0.0.1;port=3306;Database=IdentityServer4Admin;User ID=root;Password=abc@123;pooling=true;min pool size=5;max pool size=512;sslmode=none;CharSet=utf8mb4;Convert Zero Datetime=True;Allow Zero Datetime=True;AllowLoadLocalInfile=true;",
+          "connectionString": "[CONNECTIONSTRING]",
           "tableName": "Log",
           "columnOptionsSection": {
             "addStandardColumns": [ "LogEvent" ],

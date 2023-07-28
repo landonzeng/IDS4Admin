@@ -1,12 +1,13 @@
 {
+  [GETSTSURLS],
   "ConnectionStrings": {
-    "ConfigurationDbConnection": "Data Source=127.0.0.1;port=3306;Database=IdentityServer4Admin;User ID=root;Password=abc@123;pooling=true;min pool size=5;max pool size=512;sslmode=none;CharSet=utf8mb4;Convert Zero Datetime=True;Allow Zero Datetime=True;AllowLoadLocalInfile=true;",
-    "PersistedGrantDbConnection": "Data Source=127.0.0.1;port=3306;Database=IdentityServer4Admin;User ID=root;Password=abc@123;pooling=true;min pool size=5;max pool size=512;sslmode=none;CharSet=utf8mb4;Convert Zero Datetime=True;Allow Zero Datetime=True;AllowLoadLocalInfile=true;",
-    "IdentityDbConnection": "Data Source=127.0.0.1;port=3306;Database=IdentityServer4Admin;User ID=root;Password=abc@123;pooling=true;min pool size=5;max pool size=512;sslmode=none;CharSet=utf8mb4;Convert Zero Datetime=True;Allow Zero Datetime=True;AllowLoadLocalInfile=true;",
-    "DataProtectionDbConnection": "Data Source=127.0.0.1;port=3306;Database=IdentityServer4Admin;User ID=root;Password=abc@123;pooling=true;min pool size=5;max pool size=512;sslmode=none;CharSet=utf8mb4;Convert Zero Datetime=True;Allow Zero Datetime=True;AllowLoadLocalInfile=true;"
+    "ConfigurationDbConnection": "[CONNECTIONSTRING]",
+    "PersistedGrantDbConnection": "[CONNECTIONSTRING]",
+    "IdentityDbConnection": "[CONNECTIONSTRING]",
+    "DataProtectionDbConnection": "[CONNECTIONSTRING]"
   },
   "DatabaseProviderConfiguration": {
-    "ProviderType": "MySql"
+    "ProviderType": "[DBTYPE]"
   },
   "CertificateConfiguration": {
 
@@ -67,7 +68,7 @@
     "FaviconUri": "~/favicon.ico",
     "Theme": null,
     "CustomThemeCss": null,
-    "IdentityAdminBaseUrl": "https://localhost:44303",
+    "IdentityAdminBaseUrl": "[ADMINURI]",
     "AdministrationRole": "AdminRole"
   },
   "CspTrustedDomains": [
@@ -82,7 +83,7 @@
   "AdvancedConfiguration": {
     "IssuerUri": ""
   },
-  "BasePath": "",
+  "BasePath": "[STSBASEPATH]",
   "IdentityOptions": {
     "Password": {
       "RequiredLength": 8

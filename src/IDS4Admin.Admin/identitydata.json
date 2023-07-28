@@ -7,9 +7,9 @@
     ],
     "Users": [
       {
-        "Username": "admin",
-        "Password": "Pa$$word123",
-        "Email": "admin@example.com",
+        "Username": "landon",
+        "Password": "123456",
+        "Email": "landonzeng@qq.com",
         "Roles": [
           "AdminRole"
         ],

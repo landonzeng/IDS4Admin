@@ -9,13 +9,13 @@ namespace IDS4Admin.Tool
 {
     public class IDS4Config
     {
-        public string STSUri { get; set; } = "http://localhost:4010";
+        public string STSUri { get; set; } = "http://127.0.0.1:4000";
 
-        public string AdminUri { get; set; } = "http://localhost:4003";
+        public string AdminUri { get; set; } = "http://127.0.0.1:4001";
 
-        public string DbType { get; set; } = "SqlServer";
+        public string DbType { get; set; } = "MySql";
 
-        public string DbConnString { get; set; } = "Server=(localdb)\\mssqllocaldb;Database=IdentityServer4Admin;Trusted_Connection=True;MultipleActiveResultSets=true";
+        public string DbConnString { get; set; } = "Data Source=127.0.0.1;port=3306;Database=IdentityServer4Admin;User ID=root;Password=abc@123;pooling=true;min pool size=5;max pool size=512;sslmode=none;CharSet=utf8mb4;Convert Zero Datetime=True;Allow Zero Datetime=True;AllowLoadLocalInfile=true;";
 
         public string IsDocker { get; set; } = "N";
         public void SaveToFile(string path)
